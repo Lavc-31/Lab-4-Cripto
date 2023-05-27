@@ -47,7 +47,7 @@ console.log("Los mensajes cifrados son: ", cant);
     console.error("Integrity check failed for CryptoJS.");
     return;
   }
-var key = CryptoJS.enc.Utf8.parse("CRIPTOCRIPTOCRIPTOCRIPTO");
+var key = CryptoJS.enc.Utf8.parse(concatenacion);
 for (var x = 0; x < elementos.length; x++) {
     var mensaje_cifrado = elementos[x].id;
     var mensaje_descifrado = CryptoJS.TripleDES.decrypt(mensaje_cifrado, key, {
